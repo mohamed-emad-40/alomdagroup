@@ -1,0 +1,52 @@
+.login-root {
+  min-height: 100vh;
+  display: grid; place-items: center;
+  background: linear-gradient(145deg, #111827 0%, #1F2937 50%, #111827 100%);
+  padding: 24px;
+  font-family: var(--adm-font);
+  direction: rtl;
+}
+.login-card {
+  background: #fff; border-radius: var(--adm-r-xl);
+  padding: clamp(32px, 5vw, 52px);
+  width: 100%; max-width: 420px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.35);
+}
+.login-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+.login-mark {
+  width: 44px; height: 44px; background: var(--adm-gold);
+  border-radius: var(--adm-r-md); display: grid; place-items: center;
+  font-size: 15px; font-weight: 800; color: #fff; flex-shrink: 0;
+}
+.login-name { font-size: 17px; font-weight: 800; color: var(--adm-gray-900); }
+.login-sub  { font-size: 12px; color: var(--adm-gray-400); margin-top: 2px; }
+.login-title { font-size: 24px; font-weight: 800; color: var(--adm-gray-900); margin-bottom: 6px; }
+.login-desc  { font-size: 14px; color: var(--adm-gray-400); margin-bottom: 28px; }
+.login-error {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--adm-red-light); color: var(--adm-red);
+  padding: 10px 14px; border-radius: var(--adm-r-sm);
+  font-size: 13px; font-weight: 600; margin-bottom: 20px;
+  border: 1px solid rgba(220,38,38,0.15);
+}
+.login-form { display: flex; flex-direction: column; gap: 18px; }
+.login-input-wrap { position: relative; display: flex; align-items: center; }
+.login-icon { position: absolute; right: 12px; color: var(--adm-gray-400); pointer-events: none; flex-shrink: 0; }
+.login-input-wrap input {
+  width: 100%; padding: 11px 38px 11px 40px;
+  border: 1.5px solid var(--adm-gray-200); border-radius: var(--adm-r-sm);
+  font-size: 14px; font-family: var(--adm-font);
+  color: var(--adm-gray-900); background: var(--adm-gray-50);
+  transition: all var(--adm-dur); outline: none;
+}
+.login-input-wrap input:focus {
+  border-color: var(--adm-gold); background: #fff;
+  box-shadow: 0 0 0 3px rgba(232,151,26,0.12);
+}
+.login-eye {
+  position: absolute; left: 10px; color: var(--adm-gray-400);
+  padding: 4px; border-radius: 4px; transition: color var(--adm-dur);
+  cursor: pointer; display: flex; align-items: center; border: none; background: none;
+}
+.login-eye:hover { color: var(--adm-gray-700); }
+.login-submit { width: 100%; justify-content: center; padding: 13px; font-size: 15px; margin-top: 4px; border-radius: var(--adm-r-md); }

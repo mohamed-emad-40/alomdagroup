@@ -1,0 +1,9 @@
+.company-grid { display: flex; flex-direction: column; gap: 20px; }
+
+.company-section { overflow: hidden; }
+.company-section__title {
+  font-size: 13px; font-weight: 700; color: var(--adm-gray-700);
+  padding: 14px 20px; border-bottom: 1px solid var(--adm-gray-100);
+  background: var(--adm-gray-50);
+}
+.company-section__body { padding: 20px; }
